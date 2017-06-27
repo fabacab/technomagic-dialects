@@ -2,6 +2,8 @@
 
 Contained herein are a set of simple aliases and symbolic links making up a "dialect" with which you can "speak" to a POSIX-conformant shell. It helps you think about computer commands using metaphors other than "computer commands," importing various metaphors sourced from differing cultural contexts. These include, for example, a "text based game" such as an old-school MUD or RPG, pop-cultural references such as Harry Potter spells, and other, more esoteric cultural dialects.
 
+![Animated GIF showing the use of the locking and unlocking charms on a macOS system from the Harry Potter dialect.](https://i.imgur.com/NhE2S80.gif)
+
 For example, on macOS, you can "lock" files using the Finder's graphical Inspector (also known as the "Get Info" window): command-click (or right-click) on a file on your desktop, select "Get Info" from the contextual menu, and check the "Locked" checkbox. Once a file is "locked," it must first be "unlocked" before it can be changed or accessed in certain ways. In the Desktop metaphor (the default, ubiqutitous computing metaphor popularized by the Mac OS classic and Windows "Desktop Environments"), you again access the "Get Info" window, and must uncheck the "Locked" checkbox. On a command line, the same can be accomplished using the `chflags(1)` command of a macOS system:
 
 ```sh

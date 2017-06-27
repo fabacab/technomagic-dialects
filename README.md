@@ -8,10 +8,11 @@ For example, on macOS, you can "lock" files using the Finder's graphical Inspect
 chflags nouimmutable $file # Invoke the macOS chflags command, negating the "user immutable" flag on "$file"
 ```
 
-Using the Harry Potter dialect, however, the same can be accomplished by reciting the incantation for the [Unlocking Charm](https://harrypotter.wikia.com/wiki/Unlocking_Charm):
+Using the Harry Potter dialect, however, the same can be accomplished by reciting the incantation for the [Unlocking Charm](https://harrypotter.wikia.com/wiki/Unlocking_Charm) or the [Locking Spell](https://harrypotter.wikia.com/wiki/Locking_Spell), and the two spells will do what you expect:
 
 ```sh
-alohomora $file
+alohomora $file   # Casts the unlocking charm on a file. If it is locked, it will now be unlocked.
+colloportus $file # You can of course also (re-)lock files using the locking spell.
 ```
 
 Similarly, after activating the "text based game" dialect, you can move around and explore a filesystem using a gaming analogy:
@@ -28,7 +29,7 @@ Downloads      Pictures
 /Users/demouser/Desktop
 ```
 
-Notice that shell syntax is still in effect, and you must quote so-called "commands" that contain spaces. We are still "using a computer." We are just *thinking about* doing so in one of a number of infinite different ways, and in so doing choosing one of an infinite number of experiences to have and while we are doing so.
+Notice that shell syntax is still in effect, and you must quote so-called "commands" that contain spaces. We are still "using a computer." We are just *thinking about* doing so in one of a number of infinite different ways, and in so doing choosing one of an infinite number of experiences to have while we are doing so.
 
 For many people, one of these different metaphors will be more comfortable or will simply feel better than the "Desktop" metaphor, which often invokes coercive and stressful employment scenarios. Fuck. That. Shit.
 

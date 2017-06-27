@@ -1,0 +1,22 @@
+#
+# This script activates a particular dialect.
+#
+# Add the directory of this program to your shell's $PATH, then use
+# the `source` command to invoke this script. For example:
+#
+#     source dialect "text based game"
+#
+# will activate the "text based game" dialect. You can then say stuff
+# like "look around" to your shell. Likewise "look around" is defined
+# as a command script in the `src/dialects/text based game/bin`
+# directory. Simply "look around" "src/dialects/text based game/bin"
+# for an idea of what other things are in there.
+
+main () {
+    local DIALECT_PATH="$(dirname $(dirname ${BASH_SOURCE[0]}))/dialects/$1"
+    PATH="$PATH:$DIALECT_PATH/bin"
+    source "$DIALECT_PATH/dialect-functions.sh"
+}
+
+main "$@"
+unset -f main # don't leave this function around.

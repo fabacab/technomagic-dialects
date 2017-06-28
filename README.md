@@ -17,6 +17,8 @@ alohomora $file   # Casts the unlocking charm on a file. If it is locked, it wil
 colloportus $file # You can of course also (re-)lock files using the locking spell.
 ```
 
+As is standard UNIX practice, you can look up more information about individual incantations from their manual page. In the Harry Potter dialect, the equivalent of the `man(1)` command is `"book of spells"`. Try `"book of spells" "book of spells"` to learn more about how to use the [Book of Spells](https://harrypotter.wikia.com/wiki/Book_of_Spells).
+
 Similarly, after activating the "text based game" dialect, you can move around and explore a filesystem using a gaming analogy:
 
 ```sh

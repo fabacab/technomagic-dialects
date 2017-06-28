@@ -20,14 +20,14 @@ colloportus $file # You can of course also (re-)lock files using the locking spe
 Similarly, after activating the "text based game" dialect, you can move around and explore a filesystem using a gaming analogy:
 
 ```sh
-"where am I"     # This is the equivalent of `pwd(1)`
+"where am I?"      # This is the equivalent of `pwd(1)`
 /Users/demouser
-"look around"    # This is an equivalent of `ls(1)`
+"look around"      # This is an equivalent of `ls(1)`
 Desktop        Movies       Public
 Documents      Music        Sites
 Downloads      Pictures
 "move-to" Desktop  # This is an equivalent of `cd(1)`
-"where am I"
+"where am I?"
 /Users/demouser/Desktop
 ```
 

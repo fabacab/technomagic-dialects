@@ -1,3 +1,11 @@
 #!/bin/bash -
 
+# Alohomora, aka the "Unlocking Charm" and "Thief's Friend"
+#
+# A charm that unlocks and opens doors and windows that are not
+# protected by magic. It is also able to open doors locked by the
+# Locking Spell (Colloportus). 
+#
+# Link: https://harrypotter.wikia.com/wiki/Alohomora
+
 chflags nouchg "$@"

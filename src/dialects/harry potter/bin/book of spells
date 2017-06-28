@@ -1,0 +1,24 @@
+#!/bin/bash -
+
+# Book of Spells
+#
+# The Book of Spells is a spellbook describing the use of a range of
+# basic and not-so-basic charms that will enhance, protect, and
+# enliven your life.
+#
+# Book of Spells is more than just a simple textbook, however. The
+# book was enchanted by Miranda Goshawk to be capable of projecting
+# its text out of the page for simpler reading, as well as conjuring
+# various objects, and even entire rooms, to provide a safe
+# environment for practising the book's various spells. The book's
+# enchantments are such that even doodles and other embellishments
+# added by previous owners of a copy of the book would be added to the
+# book's contents and could be utilised by future readers of that
+# copy.
+#
+# This program, however, currently only provides a lookup of existing
+# spells.
+#
+# Link: https://harrypotter.wikia.com/wiki/Book_of_Spells
+
+man "$@"

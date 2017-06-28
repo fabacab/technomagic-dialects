@@ -1,0 +1,8 @@
+*.swp
+*.DS_Store
+
+.bundle
+vendor/*
+
+# We ignore the man directories, as these are generated.
+src/dialects/*/man

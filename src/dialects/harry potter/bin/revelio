@@ -1,0 +1,39 @@
+#!/bin/bash -
+
+# Revelio
+#
+# A charm used to reveal hidden objects. It may also be used to
+# reveal the true appearance of someone who changed their appearance
+# with a spell.
+#
+# What this charm does when it is cast depends on the object on which
+# it was cast. If the object is a directory, the charm reveals hidden
+# files within the directory. If the object is a file, the charm will
+# reveal additional information about the type of file that it is,
+# even if the file's name or extension has been altered; said another
+# way, this charm will reveal the true form of the file based on its
+# real contents, not its appearance or its name.
+#
+# Link: https://harrypotter.wikia.com/wiki/Revelio_Charm
+
+usage () {
+    echo "Usage: revelio object"
+}
+
+main () {
+    if [ $# -lt 1 ]; then
+        usage
+        exit 1
+    fi
+
+    case $(stat -f "%HT" "$1") in
+        "Directory")
+            ls -A "$1" | grep "^\."
+            ;;
+        "Regular File")
+            file "$1"
+            ;;
+    esac
+}
+
+main "$@"

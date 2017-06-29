@@ -93,9 +93,23 @@ Bundle complete! 1 Gemfile dependency, 6 gems now installed.
 Bundled gems are installed into ./vendor/bundle.
 ```
 
+## Development utilities
+
+### `build.sh`
+
+The build script readies the source code for distribution.
+
 Once [installed](#installation) and a given dialect [activated](#activating-dialects), you can generate individual manual pages from the files in the `src` directory and view them in your manual page viewer as follows:
 
 ```sh
 ./utils/build.sh --force-clean # Use the build script to clean and regenerate the docs.
 man "look around"              # View generated documentation with the man page viewer.
+```
+
+### `scaffold.sh`
+
+The scaffold script makes generating new dialects, commands, and so on easier. For instance:
+
+```sh
+./utils/scaffold.sh --new-dialect "my fandom" # Creates a new dialect called "my fandom" from a template.
 ```

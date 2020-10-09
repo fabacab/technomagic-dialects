@@ -42,7 +42,7 @@ For many people, one of these different metaphors will be more comfortable or wi
 Installation requires downloading the code for the dialects contained in this repository and then adding a directory to your computer's default shell's `$PATH` variable. For instance, if you're using Bash:
 
 ```sh
-git clone https://github.com/meitar/technomagic-dialects.git              # Download the source code.
+git clone https://github.com/fabacab/technomagic-dialects.git             # Download the source code.
 echo "PATH=$PATH:$(pwd -P)/technomagic-dialects/src/bin" >> ~/.bash_login # Append the technomagic-dialect's bin directory to your Bash shell's auto-sourced PATH.
 ```
 

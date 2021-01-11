@@ -8,7 +8,7 @@ GEM
       redcarpet (~> 3.0)
       rouge (~> 1.0)
     opener (0.1.0)
-    redcarpet (3.4.0)
+    redcarpet (3.5.1)
     rouge (1.11.1)
 
 PLATFORMS
